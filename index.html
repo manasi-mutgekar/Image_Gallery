@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+
+    <header class="header">
+        <p class="subtitle">CAPTURE BEAUTIFUL MOMENTS</p>
+        <h1>My Image Gallery ✨</h1>
+        <p>Explore the beauty of nature, travel and food.</p>
+    </header>
+
+    <main class="container">
+
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All Photos</button>
+            <button class="filter-btn" data-filter="nature">Nature</button>
+            <button class="filter-btn" data-filter="travel">Travel</button>
+            <button class="filter-btn" data-filter="food">Food</button>
+        </div>
+
+        <section class="gallery">
+
+            <!-- NATURE 1 -->
+            <article class="gallery-item" data-category="nature">
+                <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=900&q=80" alt="Beautiful green forest">
+                <div class="caption">
+                    <span>Nature</span>
+                    <h2>Into the Forest</h2>
+                </div>
+            </article>
+
+            <!-- TRAVEL 1 -->
+            <article class="gallery-item" data-category="travel">
+                <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=80" alt="Snowy mountain landscape">
+                <div class="caption">
+                    <span>Travel</span>
+                    <h2>Mountain Dreams</h2>
+                </div>
+            </article>
+
+            <!-- FOOD 1 -->
+            <article class="gallery-item" data-category="food">
+                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=80" alt="Delicious food on a table">
+                <div class="caption">
+                    <span>Food</span>
+                    <h2>Food Moments</h2>
+                </div>
+            </article>
+
+            <!-- NATURE 2 -->
+            <article class="gallery-item" data-category="nature">
+                <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=900&q=80" alt="Peaceful lake and mountains">
+                <div class="caption">
+                    <span>Nature</span>
+                    <h2>Peaceful Escape</h2>
+                </div>
+            </article>
+
+            <!-- TRAVEL 2 -->
+            <article class="gallery-item" data-category="travel">
+                <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=900&q=80" alt="Colorful coastal Italian village">
+                <div class="caption">
+                    <span>Travel</span>
+                    <h2>Beautiful Places</h2>
+                </div>
+            </article>
+
+            <!-- FOOD 2 -->
+            <article class="gallery-item" data-category="food">
+                <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=900&q=80" alt="Freshly prepared cup of coffee">
+                <div class="caption">
+                    <span>Food</span>
+                    <h2>Coffee Time</h2>
+                </div>
+            </article>
+
+            <!-- NEW NATURE 3 -->
+            <article class="gallery-item" data-category="nature">
+                <img src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=900&q=80" alt="Green trees">
+                <div class="caption">
+                    <span>Nature</span>
+                    <h2>Green Paradise</h2>
+                </div>
+            </article>
+
+            <!-- NEW TRAVEL 3 -->
+            <article class="gallery-item" data-category="travel">
+                <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80" alt="Scenic travel destination">
+                <div class="caption">
+                    <span>Travel</span>
+                    <h2>Wander More</h2>
+                </div>
+            </article>
+
+            <!-- NEW FOOD 3 -->
+            <article class="gallery-item" data-category="food">
+                <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=900&q=80" alt="Healthy food bowl">
+                <div class="caption">
+                    <span>Food</span>
+                    <h2>Fresh and Healthy</h2>
+                </div>
+            </article>
+
+            <!-- NEW NATURE 4 -->
+            <article class="gallery-item" data-category="nature">
+                <img src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?auto=format&fit=crop&w=900&q=80" alt="Beautiful waterfall">
+                <div class="caption">
+                    <span>Nature</span>
+                    <h2>Waterfall Wonders</h2>
+                </div>
+            </article>
+
+            <!-- NEW TRAVEL 4 -->
+            <article class="gallery-item" data-category="travel">
+                <img src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&w=900&q=80" alt="Travel scenery">
+                <div class="caption">
+                    <span>Travel</span>
+                    <h2>Explore the World</h2>
+                </div>
+            </article>
+
+            <!-- NEW FOOD 4 -->
+            <article class="gallery-item" data-category="food">
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=900&q=80" alt="Delicious pizza">
+                <div class="caption">
+                    <span>Food</span>
+                    <h2>Pizza Delight</h2>
+                </div>
+            </article>
+
+        </section>
+
+        <p id="emptyMessage" hidden>No photos found.</p>
+    </main>
+
+    <footer>
+        Made with ❤️ and creativity
+    </footer>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <button class="close-btn" id="closeBtn" aria-label="Close">&times;</button>
+        <button class="nav-btn" id="prevBtn" aria-label="Previous photo">&#10094;</button>
+        <figure>
+            <img id="lightboxImage" src="" alt="">
+            <figcaption id="lightboxCaption"></figcaption>
+        </figure>
+        <button class="nav-btn" id="nextBtn" aria-label="Next photo">&#10095;</button>
+    </div>
+
+</body>
+</html>
